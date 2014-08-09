@@ -77,6 +77,9 @@
 		C34F739E198D5C9F000B0413 /* SmartCMN.h in Headers */ = {isa = PBXBuildFile; fileRef = C34F731E198D5877000B0413 /* SmartCMN.h */; };
 		C34F739F198D5C9F000B0413 /* SScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = C34F731F198D5877000B0413 /* SScribe.h */; };
 		C34F73A0198D5C9F000B0413 /* Version.h in Headers */ = {isa = PBXBuildFile; fileRef = C34F7320198D5877000B0413 /* Version.h */; };
+		C34F73B6198DA2FB000B0413 /* temp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34F73B5198DA2FB000B0413 /* temp.cpp */; };
+		C34F73B7198DA2FB000B0413 /* temp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C34F73B5198DA2FB000B0413 /* temp.cpp */; };
+		C34F73B9198DA306000B0413 /* temp.h in Headers */ = {isa = PBXBuildFile; fileRef = C34F73B8198DA306000B0413 /* temp.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -556,6 +559,8 @@
 		C34F7338198D5C78000B0413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C34F7346198D5C78000B0413 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C34F7349198D5C78000B0413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C34F73B5198DA2FB000B0413 /* temp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = temp.cpp; sourceTree = "<group>"; };
+		C34F73B8198DA306000B0413 /* temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = temp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1329,6 +1334,7 @@
 		C34F72EF198D5877000B0413 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C34F73B5198DA2FB000B0413 /* temp.cpp */,
 				C34F72F0198D5877000B0413 /* AcousticModel.cpp */,
 				C34F72F1198D5877000B0413 /* AudioQueueFallback.cpp */,
 				C34F72F2198D5877000B0413 /* AudioSessionManager.cpp */,
@@ -1357,6 +1363,7 @@
 		C34F7305198D5877000B0413 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				C34F73B8198DA306000B0413 /* temp.h */,
 				C34F7306198D5877000B0413 /* AcousticModel.h */,
 				C34F7307198D5877000B0413 /* AudioConstants.h */,
 				C34F7308198D5877000B0413 /* AudioQueueFallback.h */,
@@ -1440,6 +1447,7 @@
 				C34F7392198D5C9F000B0413 /* GrammarGenerator.h in Headers */,
 				C34F739E198D5C9F000B0413 /* SmartCMN.h in Headers */,
 				C34F7388198D5C9F000B0413 /* AudioQueueFallback.h in Headers */,
+				C34F73B9198DA306000B0413 /* temp.h in Headers */,
 				C34F7390198D5C9F000B0413 /* FliteVoice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1519,6 +1527,7 @@
 				C34F7362198D5C99000B0413 /* ContinuousAudioUnit.cpp in Sources */,
 				C34F7360198D5C99000B0413 /* CommandArray.cpp in Sources */,
 				C34F7361198D5C99000B0413 /* ContinuousADModule.cpp in Sources */,
+				C34F73B6198DA2FB000B0413 /* temp.cpp in Sources */,
 				C34F7367198D5C99000B0413 /* GraphemeGenerator.cpp in Sources */,
 				C34F735D198D5C99000B0413 /* AudioQueueFallback.cpp in Sources */,
 				C34F7363198D5C99000B0413 /* ContinuousModel.cpp in Sources */,
@@ -1547,6 +1556,7 @@
 				C34F7377198D5C99000B0413 /* ContinuousAudioUnit.cpp in Sources */,
 				C34F7375198D5C99000B0413 /* CommandArray.cpp in Sources */,
 				C34F7376198D5C99000B0413 /* ContinuousADModule.cpp in Sources */,
+				C34F73B7198DA2FB000B0413 /* temp.cpp in Sources */,
 				C34F737C198D5C99000B0413 /* GraphemeGenerator.cpp in Sources */,
 				C34F7372198D5C99000B0413 /* AudioQueueFallback.cpp in Sources */,
 				C34F7378198D5C99000B0413 /* ContinuousModel.cpp in Sources */,
@@ -1570,12 +1580,22 @@
 		C34F7127198D5743000B0413 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 			};
 			name = Debug;
 		};
 		C34F7128198D5743000B0413 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 			};
 			name = Release;
 		};
@@ -1614,6 +1634,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -1648,6 +1669,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -1674,8 +1696,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenEarsX_ios/OpenEarsX_ios-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1716,8 +1738,8 @@
 				DSTROOT = /tmp/OpenEarsX_ios.dst;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenEarsX_ios/OpenEarsX_ios-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1752,6 +1774,7 @@
 				C34F7330198D5C62000B0413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C34F7356198D5C78000B0413 /* Build configuration list for PBXNativeTarget "OpenEarsX_ios" */ = {
 			isa = XCConfigurationList;
@@ -1760,6 +1783,7 @@
 				C34F7358198D5C78000B0413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
