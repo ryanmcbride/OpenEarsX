@@ -40,7 +40,6 @@
 #ifndef _CST_VAL_H__
 #define _CST_VAL_H__
 
-#import <OpenEars/OpenEarsStaticAnalysisToggle.h>
 
 #ifdef SHOW64BITCOMPLAINTS
 #else

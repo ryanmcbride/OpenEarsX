@@ -45,8 +45,6 @@
 #include <stdlib.h>
 #endif /* __cplusplus */
 
-#import <OpenEars/OpenEarsStaticAnalysisToggle.h>
-
 #ifdef SHOW64BITCOMPLAINTS
 #else
 #if __LP64__ // This is only significant for 64-bit compilations -- prefer to keep it limited.
