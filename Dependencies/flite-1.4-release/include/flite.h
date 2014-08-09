@@ -43,8 +43,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
-
-#import <OpenEars/OpenEarsStaticAnalysisToggle.h>
     
 #ifdef SHOW64BITCOMPLAINTS
 #else

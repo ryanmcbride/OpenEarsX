@@ -38,7 +38,6 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#import <OpenEars/OpenEarsStaticAnalysisToggle.h>
 
 #ifdef SHOW64BITCOMPLAINTS
 #else

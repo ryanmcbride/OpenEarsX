@@ -1,22 +1,5 @@
-#if 0
-//  OpenEars
-//  http://www.politepix.com/openears
-//
-//  AudioConstants.h
-//  OpenEars
-// 
-//  AudioConstants is a class which sets constants controlling audio behavior that are used in many places in the API. To control the ringbuffer, it's sufficient to interact with kBufferLength only.
-//
-//  Copyright Politepix UG (haftungsbeschränkt) 2012. All rights reserved.
-//  http://www.politepix.com
-//  Contact at http://www.politepix.com/contact
-//
-//  this file is licensed under the Politepix Shared Source license found 
-//  found in the root of the source distribution. Please see the file "Version.txt" in the root of 
-//  the source distribution for the version number of this OpenEars package.
-
-/**\cond HIDDEN_SYMBOLS*/
-#import "RuntimeValues.h"
+#ifndef __OPENEARS_AUDIO_CONSTANTS_H__
+#define __OPENEARS_AUDIO_CONSTANTS_H__
 
 extern int input_sample_rate;
 
@@ -33,6 +16,5 @@ extern int input_sample_rate;
 #define kLowPassFilterTimeSlice .001 // For calculating decibel levels
 #define kDBOffset -120.0 // This is the negative offset for calculating decibel levels
 
-/**\endcond */
 #endif
 

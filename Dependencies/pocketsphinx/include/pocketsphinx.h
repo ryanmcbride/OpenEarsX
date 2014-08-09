@@ -45,7 +45,6 @@ extern "C" {
 }
 #endif
 
-#import <OpenEars/OpenEarsStaticAnalysisToggle.h>
 
 #ifdef SHOW64BITCOMPLAINTS
 #else
