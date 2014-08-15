@@ -43,7 +43,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <pocketsphinx.h>
+#include "pocketsphinx.h"
 
 #include "bin_mdef.h"
 int

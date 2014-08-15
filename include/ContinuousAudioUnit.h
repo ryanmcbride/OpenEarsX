@@ -1,4 +1,4 @@
-#if 0
+
 //  OpenEars
 //  http://www.politepix.com/openears
 //
@@ -15,18 +15,13 @@
 //  found in the root of the source distribution. Please see the file "Version.txt" in the root of 
 //  the source distribution for the version number of this OpenEars package.
 
-/**\cond HIDDEN_SYMBOLS*/
-#if defined TARGET_IPHONE_SIMULATOR && TARGET_IPHONE_SIMULATOR // The simulator uses an audio queue driver because it doesn't work at all with the low-latency audio unit driver. 
-
-#import "AudioQueueFallback.h"
-
-#else // The real driver is the low-latency audio unit driver:
-
+#ifndef _AD_H_
 #define _AD_H_
-#import <AudioToolbox/AudioToolbox.h>
 
-#import "prim_type.h"
-#import "AudioConstants.h"
+//#import <AudioToolbox/AudioToolbox.h>
+
+#include "prim_type.h"
+#include "AudioConstants.h"
 
 
 

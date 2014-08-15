@@ -1,4 +1,3 @@
-#if 0
 /* -*- c-basic-offset: 4; indent-tabs-mode: nil -*- */
 /* ====================================================================
  * Copyright (c) 1999-2001 Carnegie Mellon University.  All rights
@@ -493,5 +492,4 @@ int32 cont_set_thresh(cont_ad_t *r, int32 silence, int32 speech);
 
 #endif
 /**\endcond */
-#endif
 

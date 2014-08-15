@@ -42,7 +42,6 @@
 #endif                          /* _WIN32_WCE */
 #include <stdio.h>
 #include <string.h>
-#import "oeassert.h"
 
 /* SphinxBase headers. */
 #include "err.h"
@@ -193,7 +192,6 @@ fsg_model_tag_trans_add(fsg_model_t * fsg, int32 from, int32 to,
         hash_table_enter_bkey(fsg->trans[from].null_trans,
                               (char const *) &link->to_state,
                               sizeof(link->to_state), link);
-    oe_assert(link == link2);
 
     return 1;
 }

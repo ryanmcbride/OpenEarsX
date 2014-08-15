@@ -1,4 +1,15 @@
-#if 0
+#if 1
+#ifndef __OPENEARS_POCKET_SPHINX_CONTROLLER_H__
+#define __OPENEARS_POCKET_SPHINX_CONTROLLER_H__
+#include <string>
+class PocketsphinxController{
+public:
+    PocketsphinxController();
+    virtual ~PocketsphinxController();
+    std::string decode(std::string dir,std::string file="");
+};
+#endif
+#else
 //  OpenEars
 //  http://www.politepix.com/openears
 //
